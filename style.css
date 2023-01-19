@@ -1,0 +1,84 @@
+:root
+{
+    font-size: 62.5%;
+}
+
+body
+{
+    font-size: 1.6rem;
+}
+
+.qout li::before,
+.qout li::after
+{
+    content: "";
+    display:inline-block;
+    width: 2rem;
+    height: 2rem;
+    background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/161359/quotes.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin: 0.5rem 0.5rem;
+
+}
+
+.pdf::after,
+.xls::after,
+.doc::after {
+  content: "";
+  display: inline-block;
+  width: 1.5rem;
+  height: 1.5rem;
+  margin-right: 0.3rem;
+  margin-left: 2rem;
+  margin-top: 0.3rem;
+  background-size: contain;
+  background-repeat: no-repeat;
+  
+}
+
+.pdf::after {
+  background-image: url("https://img.icons8.com/officel/64/000000/pdf.png");
+}
+
+.xls::after {
+  background-image: url("https://img.icons8.com/dusk/64/000000/ms-excel.png");
+}
+
+.doc::after {
+  background-image: url("https://img.icons8.com/dusk/64/000000/ms-word.png");
+}
+
+.sandwich 
+{
+    border: 1px solid black;
+    border-radius: 2px;
+    margin-top: 2rem;
+}
+  
+.sandwich li 
+{
+    list-style-type: none;
+}
+  
+.sandwich ul 
+{
+    margin: 0;
+    padding: 0;
+}
+  
+.sandwichFirst::before
+{
+    content: "";
+    display: block;
+    height: 1rem;
+    background: linear-gradient(0.25turn, blue, white, orange);
+} 
+  
+.sandwichLast::before 
+{
+    content: "";
+    display: block;
+    height: 1rem;
+    background: linear-gradient(0.25turn, orange , white, blue);
+}
